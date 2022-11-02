@@ -1,0 +1,31 @@
+@use "../../assets/styles/_partials/variables" as *;
+
+.header {
+  display: flex;
+  padding: 1.6rem;
+  justify-content: space-between;
+  height: 10vh;
+  transition: 1s;
+
+  &__logo {
+    display: flex;
+  }
+  &__image {
+    height: 100%;
+  }
+  &__logo--info {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    margin: 0 0 0 1.6rem;
+    color: $primary-color-one;
+    transition: 0.5s;
+  }
+}
+.header:hover {
+  background-color: white;
+}
+.header:hover .header__title {
+  color: black;
+}

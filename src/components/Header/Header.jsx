@@ -16,11 +16,11 @@ const Header = () => {
       <div className="header__cta">
         <div className="header__login">
           <Link to={"/login"}>
-            <p>Login</p>
+            <p className="header__text">Login</p>
           </Link>
         </div>
         <div className="header__signup">
-          <p>Sign Up</p>
+          <p className="header__text">Sign Up</p>
         </div>
         <div className="header__logo--info">
           <img src={info} alt="info icon" />

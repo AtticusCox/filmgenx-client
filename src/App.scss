@@ -1,2 +1,9 @@
 @use "./assets/styles/_partials/resets" as *;
 @use "./assets/styles/_partials/breakpoints" as *;
+
+body {
+  background-image: url("./assets/images/rows-red-seats-theater.jpg");
+  //   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -1,4 +1,5 @@
 @use "../../assets/styles/_partials/variables" as *;
+@use "../../assets/styles/_partials/resets" as *;
 
 .header {
   display: flex;
@@ -21,6 +22,11 @@
     margin: 0 0 0 1.6rem;
     color: $primary-color-one;
     transition: 0.5s;
+  }
+  &__cta {
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
   }
 }
 .header:hover {

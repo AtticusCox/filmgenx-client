@@ -3,9 +3,14 @@ import axios from "axios";
 import { useState } from "react";
 import "./MovieCard.scss";
 
-const MovieCard = ({ movie }) => {
+const MovieCard = ({ movie, setIsOpen, setMovieInfo }) => {
+  const openHandler = () => {
+    setIsOpen(true);
+    setMovieInfo(movie);
+    console.log(movie);
+  };
   return (
-    <section className="movie-card">
+    <section onClick={openHandler} className="movie-card">
       <div className="movie-card__container">
         <h1 className="movie-card__title">{movie.title}</h1>
         <div className="movie-card__image-container">

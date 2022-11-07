@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Movie from "./pages/Movie";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import WatchList from "./pages/WatchList";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/movie" element={<Movie />}></Route>
           <Route path="/login" element={<Login />}></Route>
+          <Route path="/watchlist" element={<WatchList />}></Route>
         </Routes>
       </BrowserRouter>
     </>

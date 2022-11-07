@@ -1,9 +1,7 @@
-import React, { useEffect } from "react";
-import axios from "axios";
-import { useState } from "react";
-import "./MovieCard.scss";
+import React from "react";
+import "./WatchListItem.scss";
 
-const MovieCard = ({ movie, setIsOpen, setMovieInfo }) => {
+const WatchListItem = ({ movie, setIsOpen, setMovieInfo }) => {
   const openHandler = () => {
     setIsOpen(true);
     setMovieInfo(movie);
@@ -25,4 +23,4 @@ const MovieCard = ({ movie, setIsOpen, setMovieInfo }) => {
   );
 };
 
-export default MovieCard;
+export default WatchListItem;

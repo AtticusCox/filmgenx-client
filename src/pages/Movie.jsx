@@ -9,22 +9,21 @@ import InfoModal from "../components/InfoModal/InfoModal";
 const MovieList = () => {
   const [movie, setMovie] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const apiKey = process.env.REACT_APP_API_KEY;
   const [movieInfo, setMovieInfo] = useState({});
 
   useEffect(() => {
     const getRandomMovie = async () => {
       const response = await axios.get(`http://localhost:8080/random`);
       setMovie(response.data);
-      // console.log(response.data);
-      console.log(response.data);
-      console.log(movie);
     };
     getRandomMovie();
   }, []);
   if (!movie) return <p>Loading</p>;
 
-  const randomizerHandler = () => {};
+  const randomizerHandler = async () => {
+    const response = await axios.get(`http://localhost:8080/random`);
+    setMovie(response.data);
+  };
   return (
     <>
       <div className="movie-list">
@@ -46,8 +45,10 @@ const MovieList = () => {
           onClose={() => setIsOpen(false)}
           movieInfo={movieInfo}
         />
+        <button className="movie-button" onClick={randomizerHandler}>
+          RANDOMIZE
+        </button>
       </div>
-      <button>Randomize</button>
     </>
   );
 };

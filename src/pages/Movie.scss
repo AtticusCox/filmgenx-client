@@ -1,5 +1,16 @@
+@use "../assets/styles/_partials/variables" as *;
+
 .movie-list {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.movie-button {
+  margin: 2rem auto;
+  background-color: white;
+  color: $primary-color-one;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 1px 2px grey;
 }

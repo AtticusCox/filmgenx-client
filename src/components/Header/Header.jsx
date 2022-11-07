@@ -22,6 +22,11 @@ const Header = () => {
         <div className="header__signup">
           <p className="header__text">Sign Up</p>
         </div>
+        <Link to={"/watchlist"}>
+          <div className="header__watchlist">
+            <p className="header__text">Watch List</p>
+          </div>
+        </Link>
         <div className="header__logo--info">
           <img src={info} alt="info icon" />
         </div>

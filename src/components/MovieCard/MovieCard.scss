@@ -29,3 +29,9 @@
     font-size: 1.2rem;
   }
 }
+.flipCard {
+  transform: rotateY(180deg);
+}
+.movie-card:hover {
+  background-color: whitesmoke;
+}

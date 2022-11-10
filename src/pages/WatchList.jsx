@@ -15,7 +15,6 @@ const WatchList = () => {
     const getWatchList = async () => {
       const response = await axios.get("http://localhost:8080/watchlist");
       setWatchList(response.data);
-      console.log(response.data);
     };
     getWatchList();
   }, []);

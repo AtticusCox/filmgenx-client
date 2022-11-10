@@ -44,6 +44,7 @@ const MovieList = () => {
           open={isOpen}
           onClose={() => setIsOpen(false)}
           movieInfo={movieInfo}
+          movie={movie}
         />
         <button className="movie-button" onClick={randomizerHandler}>
           RANDOMIZE

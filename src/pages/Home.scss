@@ -1,0 +1,11 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20rem;
+
+  &__button {
+    padding: 1.6rem;
+    border-radius: 8px;
+  }
+}

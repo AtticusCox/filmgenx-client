@@ -27,9 +27,6 @@ const Header = () => {
             <p className="header__text">Watch List</p>
           </div>
         </Link>
-        <div className="header__logo--info">
-          <img src={info} alt="info icon" />
-        </div>
       </div>
     </section>
   );

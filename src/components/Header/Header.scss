@@ -21,7 +21,7 @@
   }
   &__title {
     margin: 0 0 0 5rem;
-    color: $primary-color-one;
+    color: white;
     transition: 0.5s;
   }
   &__cta {
@@ -31,12 +31,18 @@
   }
   &__text {
     font-size: 2.4rem;
-    color: $primary-color-one;
+    color: white;
+  }
+  &__text:hover {
+    text-decoration: underline solid 1px black;
   }
 }
 .header:hover {
   background-color: white;
 }
-.header:hover .header__title .header__text {
+.header:hover .header__title {
+  color: black;
+}
+.header:hover .header__text {
   color: black;
 }

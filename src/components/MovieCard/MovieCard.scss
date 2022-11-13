@@ -35,3 +35,6 @@
 .movie-card:hover {
   background-color: whitesmoke;
 }
+.movie-card:hover .movie-card__title {
+  color: red;
+}

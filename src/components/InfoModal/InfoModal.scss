@@ -11,7 +11,7 @@
     flex-direction: column;
     justify-content: space-between;
     position: fixed;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
@@ -19,9 +19,10 @@
     background-color: white;
     height: inherit;
     height: 85vh;
-    width: 40vw;
+    width: 50vw;
     border-radius: 8px;
     text-align: center;
+    overflow: hidden;
   }
   &__button {
     width: 30%;
@@ -33,7 +34,6 @@
     width: 100%;
   }
   &__review-list {
-    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     overflow: scroll;

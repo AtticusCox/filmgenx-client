@@ -13,7 +13,7 @@ const MovieList = () => {
 
   useEffect(() => {
     const getRandomMovie = async () => {
-      const response = await axios.get(`http://localhost:8080/random`);
+      const response = await axios.get(`http://localhost:8081/random`);
       setMovie(response.data);
     };
     getRandomMovie();
@@ -21,7 +21,7 @@ const MovieList = () => {
   if (!movie) return <p>Loading</p>;
 
   const randomizerHandler = async () => {
-    const response = await axios.get(`http://localhost:8080/random`);
+    const response = await axios.get(`http://localhost:8081/random`);
     setMovie(response.data);
   };
   return (

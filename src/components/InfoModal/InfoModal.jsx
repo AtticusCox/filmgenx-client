@@ -10,7 +10,7 @@ const InfoModal = ({ open, onClose, movieInfo, movie }) => {
 
   const getReviewList = async () => {
     const response = await axios.get(
-      `http://localhost:8080/reviews/${movie.id}`
+      `http://localhost:8081/reviews/${movie.id}`
     );
     setReviewList(response.data);
   };
@@ -22,7 +22,7 @@ const InfoModal = ({ open, onClose, movieInfo, movie }) => {
   if (!open) return null;
 
   const addToWatchList = async () => {
-    await axios.post("http://localhost:8080/watchList", movieInfo);
+    await axios.post("http://localhost:8081/watchList", movieInfo);
 
     alert("movie successfully added to watch list");
 

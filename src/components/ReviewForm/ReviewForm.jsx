@@ -13,7 +13,7 @@ const ReviewForm = ({ id, getReviewList }) => {
       rating: form.rating.value,
       videoId: id,
     };
-    axios.post("http://localhost:8080/reviews/new", newReview).then(() => {
+    axios.post("http://localhost:8081/reviews/new", newReview).then(() => {
       getReviewList();
     });
   };

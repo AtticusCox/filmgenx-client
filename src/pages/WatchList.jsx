@@ -13,7 +13,7 @@ const WatchList = () => {
 
   useEffect(() => {
     const getWatchList = async () => {
-      const response = await axios.get("http://localhost:8080/watchlist");
+      const response = await axios.get("http://localhost:8081/watchlist");
       setWatchList(response.data);
     };
     getWatchList();

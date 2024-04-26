@@ -1,32 +1,59 @@
+@use "../../styling/_partials/breakpoints" as *;
+
 .movie-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: white;
-  width: 20%;
+  min-width: 30vw;
+  max-width: 50%;
   max-height: 40%;
   min-height: 40%;
   margin: 1rem;
   padding: 1.6rem;
   border-radius: 8px;
   margin-top: 3rem;
+  @include tablet {
+    min-width: 30vw;
+    max-width: 40vw;
+    max-height: 75vh;
+    min-height: 40vh;
+  }
+  @include desktop {
+    min-width: 40vw;
+    max-width: 50vw;
+    max-height: 70vh;
+    min-width: 75vh;
+  }
+  &__container {
+    @include tablet {
+    }
+  }
 
   &__image-container {
     display: flex;
     justify-content: center;
-    height: 320px;
     margin: 0 auto;
   }
   &__image {
     height: 100%;
     width: 100%;
-    margin: 0 auto;
     border-radius: 8px;
+    @include tablet {
+      height: 50vh;
+      max-width: 30vw;
+      min-width: 25vw;
+    }
+    @include desktop {
+      height: 50vh;
+      max-width: 20vw;
+      min-width: 25vw;
+    }
   }
   &__title {
     text-align: center;
     margin-bottom: 1rem;
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 }
 .flipCard {

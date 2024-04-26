@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
-import axios from "axios";
-import { useState } from "react";
+
 import "./MovieCard.scss";
-import ReactCardFlip from "react-card-flip";
 
 const MovieCard = ({ movie, setIsOpen, setMovieInfo }) => {
   const openHandler = () => {
